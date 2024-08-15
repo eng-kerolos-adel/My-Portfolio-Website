@@ -272,13 +272,28 @@ section .title::after {
 
 .about .about-content .left {
   width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .about .about-content .left img {
   height: 400px;
   width: 400px;
+  position: relative;
   object-fit: cover;
   border-radius: 50px;
+}
+.about .about-content .left:before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50px;
+  margin-left: 8px;
+  margin-bottom: 16px;
+  background-color: #30bcff;
+  z-index: 0;
 }
 
 .about .about-content .right {
@@ -931,6 +946,10 @@ section .title::after {
     justify-content: center;
     text-align: center;
   }
+  .about .about-content .left:before {
+    height: 350px;
+    width: 350px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1004,6 +1023,13 @@ section .title::after {
 
   .about .about-content .right {
     flex: 100%;
+  }
+
+  .about .about-content .left:before {
+    height: 350px;
+    width: 350px;
+    margin-left: 15px;
+    margin-bottom: 15px;
   }
 
   .services .serv-content .card {
