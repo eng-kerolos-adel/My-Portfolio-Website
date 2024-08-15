@@ -76,23 +76,3 @@ $(document).ready(function () {
     },
   });
 });
-
-// function sendEmail() {
-//   Email.send({
-//     Host: "smtp.elasticemail.com",
-//     Username: "kerolos.adel.eleshaa@gmail.com",
-//     Password: "9B061C1AD78FD4BCE4CF3F133D6F57F11594",
-//     To: "kerolos.adel.eleshaa@gmail.com",
-//     From: document.getElementById("email").value,
-//     Subject: "New Message From Your Arabic Website",
-//     Body:
-//       "Name: " +
-//       document.getElementById("name").value +
-//       "<br> Email: " +
-//       document.getElementById("email").value +
-//       "<br> Phone: " +
-//       document.getElementById("phone").value +
-//       "<br> Message: " +
-//       document.getElementById("message").value,
-//   }).then((message) => alert("تم ارسال الرسالة بنجاح"));
-// }
