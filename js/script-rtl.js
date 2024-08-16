@@ -13,11 +13,6 @@ $(document).ready(function () {
     } else {
       $(".scroll-up-btn").removeClass("show");
     }
-    if (this.scrollY > 500) {
-      $(".lang-btn").addClass("show");
-    } else {
-      $(".lang-btn").removeClass("show");
-    }
   });
 
   // slide-up script

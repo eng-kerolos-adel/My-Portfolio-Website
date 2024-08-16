@@ -11,12 +11,6 @@ $(document).ready(function () {
     if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");
     } else {
-    }
-    if (this.scrollY > 500) {
-      $(".lang-btn").addClass("show");
-      $(".scroll-up-btn").addClass("show");
-    } else {
-      $(".lang-btn").removeClass("show");
       $(".scroll-up-btn").removeClass("show");
     }
   });
